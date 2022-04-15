@@ -1,7 +1,11 @@
 .stbox{
-  width: 90%;
+
+  width: 100%;
   /* height: 9vh; */
   background-color: rgb(255, 255, 255);
+}
+.boxs {
+  margin-top: 100px;
 }
 .css-selector {
   background: linear-gradient(231deg, #3c00f5, #f5008a, #0bbbce, #beec2f);
