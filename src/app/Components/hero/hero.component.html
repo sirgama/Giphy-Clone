@@ -2,7 +2,7 @@
   <div class="container ">
     <div class="container ">
       <div class="">
-        <input class="m-3 stbox" type="text" placeholder="Search all the GIFs and Stickers" >
+        <input class="m-2 p-3 stbox" type="text" placeholder="Search all the GIFs and Stickers" #gif (keyup.enter)="search(gif.value)">
         <img class="img-fluid" src="../../../assets/UKRAINE_BANNER_HP.gif" alt="">
       </div>
     </div>

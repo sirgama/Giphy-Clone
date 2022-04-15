@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/data.service';
 
 @Component({
   selector: 'app-hero',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeroComponent implements OnInit {
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit(): void {
   }
 
+  search(searchTerm: string){
+    if(searchTerm !== ''){
+      this.dataService.searchGifs(searchTerm)
+      .subscribe((response: any)=>{
+        console.log('Search Data', response)
+      })
+    }
+  }
 }
