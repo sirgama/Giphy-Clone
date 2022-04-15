@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
 import { HeroComponent } from './Components/hero/hero.component';
 import { HttpClientModule } from '@angular/common/http';
+import { GifsComponent } from './Components/gifs/gifs.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HeroComponent,
+    GifsComponent,
+
 
   ],
   imports: [
