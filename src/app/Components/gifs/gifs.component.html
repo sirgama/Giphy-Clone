@@ -1,7 +1,9 @@
-<div class="container">
+<div class="container-fluid">
+  <div class="container">
   <div class="row row-cols-md-4 row-cols-sm-2 m-auto">
     <div class="gif col mt-4" *ngFor="let gif of gifs">
       <img [src]="gif.images.downsized.url" alt="giphy">
     </div>
+  </div>
   </div>
 </div>
