@@ -19,9 +19,35 @@
   justify-content: center;
 }
 .nav1 {
-  font-size: 15px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-right: 5px;
   border-bottom: 6px solid rgba(13, 39, 134, 0.556);
   border-image: linear-gradient(0.25turn, rgb(0, 16, 244), rgb(255, 0, 162), rgba(243, 208, 10));
   border-image-slice: 1;
-  width:92%;
+  width:95%;
+}
+.nav1:hover {
+  background: linear-gradient(231deg, #3c00f5, #f5008a, #0bbbce, #beec2f);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 2s ease infinite;
+  -moz-animation: AnimationName 2s ease infinite;
+  animation: AnimationName 2s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
 }
