@@ -16,9 +16,7 @@ export class HeroComponent implements OnInit {
   search(searchTerm: string){
     if(searchTerm !== ''){
       this.dataService.searchGifs(searchTerm)
-      .subscribe((response: any)=>{
-        console.log('Search Data', response)
-      })
+      
     }
   }
 }
